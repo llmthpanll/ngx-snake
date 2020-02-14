@@ -199,12 +199,17 @@ export class AppComponent {
     this.score++;
 
     let tail = Object.assign({}, this.snake.parts[this.snake.parts.length - 1]);
+    let i = 1;
 
-    this.snake.parts.push(tail);
+    for (var i=0 ; i<=2 ; i++){
+      this.snake.parts.push(tail);
+    }
     this.resetFruit();
 
     if (this.score % 5 === 0) {
-      this.interval -= 15;
+      this.interval -= 5;
+      this.addObstacles();
+      this.addObstacles();
     }
   }
 
@@ -268,7 +273,7 @@ export class AppComponent {
       let j = 1;
       do {
         this.addObstacles();
-      } while (j++ < 9);
+      } while (j++ <= 5);
     }
 
     this.resetFruit();
