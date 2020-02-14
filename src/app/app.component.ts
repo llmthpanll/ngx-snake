@@ -199,7 +199,6 @@ export class AppComponent {
     this.score++;
 
     let tail = Object.assign({}, this.snake.parts[this.snake.parts.length - 1]);
-    let i = 1;
 
     for (var i=0 ; i<=2 ; i++){
       this.snake.parts.push(tail);
