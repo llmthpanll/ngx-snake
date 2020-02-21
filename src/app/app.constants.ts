@@ -10,14 +10,14 @@ export const CONTROLS = {
 export const COLORS = {
   GAME_OVER: '#D24D57',
   FRUIT: 'PINK',
-  HEAD: '#152384',
-  BODY: '#6ba314',
+  HEAD: '#b81c1c',
+  BODY: '#6062db',
   BOARD: '#86B5BD',
   OBSTACLE: '#383522'
 };
 
 export const GAME_MODES = {
-  classic: 'Classic',
-  no_walls: 'No Walls',
-  obstacles: 'Obstacles'
+  classic: 'คลาสสิคสุดๆ',
+  no_walls: 'ไม่มีกำแพงจะมาขวางฉัน',
+  obstacles: 'มาขวางฉันทำไม'
 };

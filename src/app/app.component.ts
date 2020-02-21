@@ -196,7 +196,7 @@ export class AppComponent {
   }
 
   eatFruit(): void {
-    this.score++;
+    this.score = this.score + 1;
 
     let tail = Object.assign({}, this.snake.parts[this.snake.parts.length - 1]);
 
@@ -205,10 +205,10 @@ export class AppComponent {
     }
     this.resetFruit();
 
-    if (this.score % 5 === 0) {
-      this.interval -= 5;
+    if (this.score % 2 === 0) {
+      this.interval -= 10;
       this.addObstacles();
-      this.addObstacles();
+      //this.addObstacles();
     }
   }
 
